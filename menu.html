@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Legpiece on Call | Premium Non-Veg Delivery</title>
+    <meta name="description"
+        content="Explore the authentic taste of Legpiece on Call. From our signature Shahi Makhmali Legpiece to royal combos and Nimadi specialties. Order now!">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-darker: #050505;
+            --card-bg: rgba(20, 20, 20, 0.8);
+        }
+
+        body {
+            background-color: var(--bg-darker);
+        }
+
+        .menu-header {
+            padding: 160px 0 60px;
+            text-align: center;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent), url('Logo/PNG/Logo/White Legpiece Logo.png');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .menu-section {
+            padding: 60px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .category-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 40px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        .menu-item-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 30px;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            backdrop-filter: blur(10px);
+        }
+
+        .menu-item-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(255, 75, 43, 0.1);
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .item-name {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            color: white;
+            font-weight: 700;
+        }
+
+        .item-price {
+            color: var(--secondary);
+            font-weight: 700;
+            font-size: 1.4rem;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .item-description {
+            color: var(--text-muted);
+            line-height: 1.6;
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .item-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.9rem;
+            color: var(--primary);
+            font-weight: 500;
+        }
+
+        .badge {
+            background: rgba(255, 75, 43, 0.1);
+            padding: 4px 12px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 75, 43, 0.2);
+        }
+
+        .download-banner {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 60px 0;
+            color: white;
+        }
+
+        .download-banner h3 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .menu-header {
+                padding: 120px 0 40px;
+            }
+
+            .category-title {
+                font-size: 2rem;
+            }
+
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header remains same for navigation -->
+    <header id="main-header" class="scrolled">
+        <div class="header-nav" style="padding: 10px 40px;">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Logo/PNG/Logo/White Legpiece Logo.png" alt="Legpiece on Call" style="height: 50px;">
+                </a>
+            </div>
+            <div class="desktop-only">
+                <a href="tel:+919897099921" class="btn btn-primary btn-nav">
+                    <i class="fas fa-phone-alt"></i> CALL TO ORDER
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="menu-header">
+        <div class="container">
+            <h1 class="reveal" style="font-size: 3.5rem; margin-bottom: 10px;">OUR MENU</h1>
+            <p class="reveal" style="color: var(--text-muted); font-size: 1.2rem;">Authentic Flavors, Royal Traditions
+            </p>
+        </div>
+    </div>
+
+    <!-- Signature Curries -->
+    <section class="menu-section">
+        <div class="container">
+            <h2 class="category-title reveal">Signature Curries</h2>
+            <div class="menu-grid">
+                <!-- Non-Veg -->
+                <div class="menu-item-card reveal">
+                    <div class="item-header">
+                        <h3 class="item-name">Shahi Makhmali Legpiece Masala Curry</h3>
+                        <span class="item-price">₹399/-</span>
+                    </div>
+                    <p class="item-description">Desi ghee and secret spices marinated in yogurt and cream. 2 massive
+                        legpieces cooked to perfection in a rich, velvety gravy.</p>
+                    <div class="item-meta">
+                        <span class="badge"><i class="fas fa-crown"></i> Bestseller</span>
+                        <span class="badge"><i class="fas fa-drumstick-bite"></i> 2 Pcs</span>
+                    </div>
+                </div>
+
+                <div class="menu-item-card reveal">
+                    <div class="item-header">
+                        <h3 class="item-name">Shahi Makhmali Egg Curry</h3>
+                        <span class="item-price">₹199/-</span>
+                    </div>
+                    <p class="item-description">Same royal style and rich gravy as our signature legpiece, now with
+                        golden-fried eggs. 2 eggs included.</p>
+                    <div class="item-meta">
+                        <span class="badge"><i class="fas fa-egg"></i> 2 Eggs</span>
+                    </div>
+                </div>
+
+                <div class="menu-item-card reveal">
+                    <div class="item-header">
+                        <h3 class="item-name">Royal Egg Delight</h3>
+                        <span class="item-price">₹80/-</span>
+                    </div>
+                    <p class="item-description">A wonderful combination of pure ghee and lovingly roasted eggs with our
+                        secret masala and traditional touch. 2 pieces.</p>
+                    <div class="item-meta">
+                        <span class="badge"><i class="fas fa-egg"></i> 2 Eggs</span>
+                    </div>
+                </div>
+
+                <!-- Veg -->
+                <div class="menu-item-card reveal">
+                    <div class="item-header">
+                        <h3 class="item-name">Paneer Butter Masala</h3>
+                        <span class="item-price">₹249/-</span>
+                    </div>
+                    <p class="item-description">Handcrafted homemade paneer in a rich and creamy gravy prepared with
+                        desi ghee and secret spices.</p>
+                    <div class="item-meta">
+                        <span class="badge"><i class="fas fa-leaf"></i> Veg</span>
+                    </div>
+                </div>
+
+                <div class="menu-item-card reveal">
+                    <div class="item-header">
+                        <h3 class="item-name">Heritage Shahi Dryfruit Curry</h3>
+                        <span class="item-price">₹349/-</span>
+                    </div>
+                    <p class="item-description">A truly royal blend of pure ghee and roasted premium dry fruits
+                        (cashews, raisins) in a sophisticated gravy.</p>
+                    <div class="item-meta">
+                        <span class="badge"><i class="fas fa-gem"></i> Premium</span>
+                    </div>
+                </div>
+
+                <div class="menu-item-card reveal">
+                    <div class="item-header">
+                        <h3 class="item-name">Spicy Gram Flour Patodi Curry</h3>
+                        <span class="item-price">₹199/-</span>
+                    </div>
+                    <p class="item-description">Nimar's famous traditional recipe. Spicy and flavorful gram flour
+                        "Patodi" pieces in a tangy local specialty curry.</p>
+                    <div class="item-meta">
+                        <span class="badge"><i class="fas fa-fire"></i> Spicy</span>
+                        <span class="badge">Nimar Special</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Combos -->
+    <section class="menu-section" style="background: rgba(255,255,255,0.02);">
+        <div class="container">
+            <h2 class="category-title reveal">Royal Combos</h2>
+            <div class="menu-grid">
+                <!-- Non-Veg Combos -->
+                <div class="menu-item-card reveal">
+                    <div class="item-header">
+                        <h3 class="item-name">Royal Solo Combo</h3>
+                        <span class="item-price">₹469/-</span>
+                    </div>
+                    <p class="item-description">Signature Legpiece Curry (2 pcs) + 4 Ghee Tawa Roti + 1 Roasted Papad.
+                    </p>
+                    <div class="item-meta">
+                        <span class="badge">Best Seller</span>
+                    </div>
+                </div>
+
+                <div class="menu-item-card reveal">
+                    <div class="item-header">
+                        <h3 class="item-name">Legpiece Couple Combo</h3>
+                        <span class="item-price">₹779/-</span>
+                    </div>
+                    <p class="item-description">Signature Legpiece Curry (2 pcs) + Signature Egg Curry (2 eggs) + 8 Ghee
+                        Tawa Roti + 1 Jeera Rice + 2 Papad.</p>
+                    <div class="item-meta">
+                        <span class="badge">Perfect for 2</span>
+                    </div>
+                </div>
+
+                <div class="menu-item-card reveal">
+                    <div class="item-header">
+                        <h3 class="item-name">Egg Power Combo</h3>
+                        <span class="item-price">₹269/-</span>
+                    </div>
+                    <p class="item-description">Signature Egg Curry (2 eggs) + 4 Ghee Tawa Roti + 1 Roasted Papad.</p>
+                    <div class="item-meta">
+                        <span class="badge">High Protein</span>
+                    </div>
+                </div>
+
+                <div class="menu-item-card reveal">
+                    <div class="item-header">
+                        <h3 class="item-name">Egg Couple Combo</h3>
+                        <span class="item-price">₹609/-</span>
+                    </div>
+                    <p class="item-description">Signature Egg Curry (4 eggs) + 8 Ghee Tawa Roti + 1 Jeera Rice + 2
+                        Roasted Papad.</p>
+                    <div class="item-meta">
+                        <span class="badge">Egg Feast</span>
+                    </div>
+                </div>
+
+                <!-- Veg Combos -->
+                <div class="menu-item-card reveal">
+                    <div class="item-header">
+                        <h3 class="item-name">Shahi Paneer Combo</h3>
+                        <span class="item-price">₹319/-</span>
+                    </div>
+                    <p class="item-description">Paneer Butter Masala + 4 Ghee Tawa Roti + 1 Roasted Papad.</p>
+                    <div class="item-meta">
+                        <span class="badge"><i class="fas fa-leaf"></i> Veg</span>
+                    </div>
+                </div>
+
+                <div class="menu-item-card reveal">
+                    <div class="item-header">
+                        <h3 class="item-name">Nimadi Special Combo</h3>
+                        <span class="item-price">₹269/-</span>
+                    </div>
+                    <p class="item-description">Nimar's Patodi Curry + 4 Ghee Tawa Roti + 1 Roasted Papad.</p>
+                    <div class="item-meta">
+                        <span class="badge">Local Treat</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quik Egg Bites -->
+    <section class="menu-section">
+        <div class="container">
+            <h2 class="category-title reveal">Quik Egg Bites</h2>
+            <div class="menu-grid">
+                <div class="menu-item-card reveal">
+                    <div class="item-header">
+                        <h3 class="item-name">Egg Roast</h3>
+                        <span class="item-price">₹149/-</span>
+                    </div>
+                    <p class="item-description">4 boiled eggs, 2 onions, 1 tsp ginger-garlic paste, curry leaves,
+                        spices, oil.</p>
+                </div>
+
+                <div class="menu-item-card reveal">
+                    <div class="item-header">
+                        <h3 class="item-name">Egg Bhurji</h3>
+                        <span class="item-price">₹149/-</span>
+                    </div>
+                    <p class="item-description">4 eggs, 1 onion, 1 tomato, 2 green chilies, butter, spices.</p>
+                </div>
+
+                <div class="menu-item-card reveal">
+                    <div class="item-header">
+                        <h3 class="item-name">Egg Masala Omelette</h3>
+                        <span class="item-price">₹149/-</span>
+                    </div>
+                    <p class="item-description">Spicy and fluffy masala omelette prepared with 4 eggs, onions, and local
+                        spices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sides & Desserts -->
+    <section class="menu-section" style="background: rgba(255,255,255,0.02);">
+        <div class="container">
+            <h2 class="category-title reveal">Sides & Delights</h2>
+            <div class="menu-grid">
+                <div class="menu-item-card reveal">
+                    <div class="item-header">
+                        <h3 class="item-name">Authentic Curry Accompaniments</h3>
+                    </div>
+                    <div class="item-description">
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                <span>Plain / Ghee Tawa Roti</span>
+                                <span>₹15 / ₹20</span>
+                            </li>
+                            <li style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                <span>Plain / Jeera Rice</span>
+                                <span>₹50 / ₹75</span>
+                            </li>
+                            <li style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                <span>Assorted Papad (Roasted/Fried)</span>
+                                <span>₹20 - ₹45</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="menu-item-card reveal">
+                    <div class="item-header">
+                        <h3 class="item-name">Kolkata original Gur Rasgulla</h3>
+                        <span class="item-price">₹30/-</span>
+                    </div>
+                    <p class="item-description">Authentic Kolkata-style Rasgullas made with premium date palm jaggery
+                        (Gur). Per piece.</p>
+                    <div class="item-meta">
+                        <span class="badge">Sweet Delight</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="download-banner reveal">
+                <h3>Delivery Information</h3>
+                <p style="margin-bottom: 25px;">Free delivery for orders above <strong>₹299</strong>. For orders below
+                    ₹299, a delivery fee of ₹30 applies.</p>
+                <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.2); margin-bottom: 30px;">
+                <h3>Want to keep our menu handy?</h3>
+                <p>Download our complete menu PDF and never miss out on your favorite dishes.</p>
+                <a href="Menu Card/Menu Card Legpiece.pdf" class="btn btn-outline"
+                    style="margin-top: 20px; border-color: white; color: white;">
+                    <i class="fas fa-download"></i> DOWNLOAD FULL MENU (PDF)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="padding: 60px 0; background-color: var(--bg-dark); border-top: 1px solid rgba(255,255,255,0.05);">
+        <div class="container" style="text-align: center;">
+            <div class="logo" style="margin-bottom: 30px;">
+                <img src="Logo/PNG/Logo/White Legpiece Logo.png" alt="Legpiece on Call" style="height: 50px;">
+            </div>
+            <p style="color: var(--text-muted);">&copy; 2024 Legpiece on Call. All Rights Reserved.</p>
+            <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px; font-size: 1.5rem;">
+                <a href="#" style="color: var(--text-muted);"><i class="fab fa-instagram"></i></a>
+                <a href="#" style="color: var(--text-muted);"><i class="fab fa-facebook"></i></a>
+                <a href="#" style="color: var(--text-muted);"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple reveal animation
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>

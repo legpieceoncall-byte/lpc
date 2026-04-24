@@ -1,0 +1,319 @@
+
+
+LEGPIECE ON CALL
+Website Design Brief
+Prepared for Anti Gravity
+April 2026  |  Version 1.0
+
+
+
+1. Project Overview
+Legpiece on Call is a Barwani-based home delivery food brand specialising in slow-cooked, authentically spiced chicken legpiece curry, egg dishes, and Nimadi vegetarian specialties. The brand delivers exclusively in the Barwani area, 7:30–10:30 PM, with a focus on quality, heritage, and community.
+
+Field
+Details
+Client
+Legpiece on Call
+Contact
++91 82360 95399
+Location
+Barwani, Madhya Pradesh
+Delivery window
+7:30 PM – 10:30 PM
+Service area
+Barwani only
+Delivery charge
+₹20 (free on orders ₹299+)
+Design agency
+Anti Gravity
+Website type
+Single scroll homepage + 4 secondary pages
+Primary device
+Mobile-first (WhatsApp-referred audience)
+
+2. Brand Identity
+[  ] Anti Gravity to apply logo and color palette from the previously approved brand identity build. Placeholders below indicate where those assets should be applied.
+
+2.1 Logo usage
+	•	Primary logo: “Legpiece” wordmark with “on call” in smaller weight below
+	•	Logo appears on: site header (top-left), footer, and each page’s favicon
+	•	On red backgrounds: use white version of logo
+	•	On white/light backgrounds: use full-color version
+	•	Minimum clear space: equal to the height of the “L” on all sides
+	•	Do NOT stretch, recolor outside brand palette, or place on busy photography without a backing panel
+
+2.2 Color palette
+Apply Anti Gravity’s approved palette. The brand’s visual language reads: bold, warm, desi confidence. The reference tones from the menu card are documented below as directional guidance only — defer to the approved brand file.
+
+
+#C0392B  Brand red (primary)
+CTAs, headings, hero backgrounds, active states
+
+#1A1A1A  Deep black
+Body text, nav text, footer background
+
+#FAF8F4  Off-white / cream
+Page background, card surfaces
+
+#2E7D52  Warm green (veg indicator)
+Veg section accents, veg badges
+
+#D4A017  Gold / amber
+Winner banner, prize highlights, star ratings
+
+2.3 Typography
+Role
+Spec
+Display / hero headlines
+Bold serif or heavy sans — Anti Gravity to confirm from brand file
+Section headings (H2)
+Semi-bold sans, ~28–32px desktop
+Body / descriptions
+Regular sans, 16px, line-height 1.6
+Prices & badges
+Monospace or tabular numerals, bold
+Hindi / Devanagari text
+Noto Sans Devanagari or equivalent; match weight of English counterpart
+
+All prices must use the Rupee symbol (₹) with tabular numerals to ensure alignment in combo cards.
+
+3. Site Architecture
+The website is a mobile-first single-scroll homepage with four linked secondary pages. All content is in English with bilingual Hindi–English on dish descriptions (matching the menu card style).
+
+Page
+Purpose
+Homepage (index)
+Single scroll — all 6 sections below
+/menu
+Full itemised menu with images and prices
+/about
+Brand story and Nimar culinary heritage
+/contact
+Call to order, delivery info, area map
+/gallery
+Dish photography and behind-the-scenes
+
+4. Homepage Sections (in scroll order)
+Each section below is described with its content, design intent, key interactions, and copy direction. Sections must flow seamlessly on mobile with no horizontal scroll.
+
+Section 1 — Hero
+DESIGN INTENT
+Full-viewport hero. Appetite-first. The dish must fill the screen. CTA is the only action.
+
+CONTENT
+	•	Background: full-bleed photograph of Shahi Makhmali Legpiece Masala Curry (2-piece bowl, overhead or 3/4 angle)
+	•	Overlay: brand red panel (60% opacity OR solid left-aligned panel) housing the headline
+	•	Headline: “Barwani ka asli zaika, ab ghar tak” (Hindi) + “Real Nimadi flavour, delivered” (English subhead)
+	•	Price anchor: “Starting ₹199” in gold/amber type
+	•	CTA button: “Call to Order” — tapping dials +91 82360 95399 (tel: link)
+	•	Secondary link: “See full menu ↓” smooth-scrolls to Section 4
+	•	Logo top-left, phone number top-right in nav bar
+
+MOBILE BEHAVIOUR
+Hero image cropped to portrait. Overlay takes full bottom 40% of viewport. CTA button is 56px tall minimum (thumb-friendly).
+
+Section 2 — Nimadi signature story
+DESIGN INTENT
+A brand-soul section. Not a product card — a story. Warm, editorial, slightly slower pace to let the reader breathe.
+
+CONTENT
+	•	Section label: “Our signature”
+	•	Headline: “Shahi Makhmali Legpiece Masala Curry”
+	•	Subhead: “A unique blend of purity and taste”
+	•	Body (English): Two large juicy chicken leg pieces marinated overnight in fresh onions, yogurt, and ginger-garlic paste. Slow-cooked with hand-ground spices and premium dry fruits until the gravy is thick and velvety. Experience the authentic desi flavour in every bite.
+	•	Body (Hindi): (Bilingual block — right column or below, lighter weight, same copy in Devanagari)
+	•	Price badge: ₹399 / 2 legpiece
+	•	Dish image: right-aligned or full-width cinematic crop
+
+NOTES FOR ANTI GRAVITY
+This section should feel like a premium restaurant’s ‘About the dish’ page. Not a product card. Use generous whitespace and let the image breathe.
+
+Section 3 — Combo of the day
+DESIGN INTENT
+High-conversion section. Combos are the best-value items. Cards must be scannable at a glance on mobile.
+
+CONTENT — 4 COMBO CARDS
+Combo
+Includes
+Royal Solo Combo
+2 Legpiece curry + 4 ghee roti + 1 papad
+Legpiece Couple Combo
+2 Legpiece + 2 Egg curry + 8 roti + rice + 2 papad
+Egg Power Combo
+2 Egg curry + 4 ghee roti + 1 papad
+Egg Couple Combo
+4 Egg curry + 8 roti + rice + 2 papad
+
+CARD DESIGN
+	•	Each card: dish image top, combo name, included items in small type, price in large bold type, “Call to order” button
+	•	Bestseller badge on Royal Solo and Legpiece Couple Combo cards
+	•	Add-on note below cards: Extra roti ₹15 | Extra rice ₹40
+	•	Cards scroll horizontally on mobile (snap scroll), 2-column grid on desktop
+
+Section 4 — Full menu explorer (tabbed)
+DESIGN INTENT
+Tab-based browsing by category. Users pick their preference and scroll only the relevant items. Clean, fast, no page reload.
+
+TAB STRUCTURE
+Tab
+Items
+Non-veg
+Shahi Makhmali Legpiece Curry (₹399), Royal Yellow Chicken Soup (₹249)
+Veg
+Paneer Butter Masala (₹249), Heritage Shahi Kaju Curry (₹349), Nimadi Patodi Curry (₹199)
+Egg bites
+Egg Curry (₹199), Egg Roast (₹149), Egg Bhurji (₹149), Egg Masala Omelette (₹149)
+Sweets
+Royal Egg Delight / Halwa (₹80), Kolkata Gur Rasgulla (₹30 each)
+
+ITEM CARD ELEMENTS
+	•	Dish photograph (square, 1:1)
+	•	Dish name in English (bold) + Hindi below (lighter)
+	•	One-line descriptor
+	•	Price in ₹ (tabular numerals)
+	•	Veg / Non-veg dot indicator (green for veg, red for non-veg) — per FSSAI standard
+
+BEHAVIOUR
+	•	Tabs switch content without page navigation (JS toggle)
+	•	Active tab: brand red underline + bold text
+	•	On mobile: tab bar is horizontally scrollable if needed
+
+Section 5 — Suggest a dish
+DESIGN INTENT
+Community-engagement section. Encourages repeat visits and brand loyalty. The mechanic: users vote on submitted dish ideas; the week’s winner gets made and the suggester gets a free combo. This is the brand’s primary growth and retention tool on the website.
+
+SUB-COMPONENTS
+	•	Last week’s winner banner: shows winning dish name and suggester’s first name + votes received. Background: warm green. Signals that the mechanic is real.
+	•	Voting list: 4 current week suggestions shown as cards with vote count, progress bar, and a ‘+ Vote’ button. One vote per user per week (session-based at minimum; phone OTP-based preferred).
+	•	Suggestion form: three fields — Dish name, Short description (2 lines max), Phone number. Submit button triggers confirmation state.
+	•	Fine print: voting rules, prize value (₹469 Royal Solo Combo), announcement schedule (winner every Sunday via WhatsApp).
+
+MECHANIC RULES (FOR DEVELOPER)
+	•	Voting resets Monday 12:00 AM
+	•	Winner announced Sunday, pinned to top of section for the following week
+	•	Phone number collected for winner contact only — no marketing use without consent
+	•	Minimum backend: a simple Airtable or Google Sheets webhook is acceptable for V1
+
+PRIZE DISPLAY
+Prize callout badge at top-right of section: “Free combo for the winner” in gold/amber on dark background. Prize is specifically the Royal Solo Combo (₹469 value). Make the prize feel tangible.
+
+Section 6 — How to order + footer
+DESIGN INTENT
+Operational clarity. Users arriving from WhatsApp or word-of-mouth need to know exactly how to order, when, and where. No ambiguity.
+
+HOW TO ORDER BLOCK
+	•	Step 1: Browse the menu (link to /menu)
+	•	Step 2: Call +91 82360 95399 before 7:30 PM
+	•	Step 3: Delivery to your door 7:30–10:30 PM
+	•	Visual treatment: 3 horizontal steps with icon + text. Simple, bold.
+
+OPERATIONAL INFO BLOCK
+Info
+Detail
+Order cutoff
+7:30 PM daily
+Delivery window
+7:30 PM – 10:30 PM
+Delivery charge
+₹20 (free on ₹299+)
+Service area
+Barwani only
+Contact
++91 82360 95399
+
+FOOTER
+	•	Logo (white version on dark background)
+	•	Phone number as tap-to-call link
+	•	WhatsApp icon linking to wa.me number
+	•	Instagram / Facebook icons (if handles are available — confirm with client)
+	•	Short tagline: “Barwani ka asli zaika”
+	•	Copyright line: © 2026 Legpiece on Call
+
+5. Secondary Pages
+Each secondary page shares the main nav and footer. Nav links: Home, Menu, About, Gallery, Contact.
+
+Page
+Key content
+/menu
+All items grouped by category (Non-veg, Veg, Egg, Sweets). Same card design as homepage tabs. Filter bar at top. Search input for dish name.
+/about
+Brand story: Nimar culinary tradition, slow-cooking philosophy, the team. Pull quotes from menu card descriptions. One full-bleed food photograph per section.
+/gallery
+Masonry grid of dish photography. Mobile: 2-column. Desktop: 3-column. Lightbox on tap. No captions needed.
+/contact
+Tap-to-call button (prominent), WhatsApp link, operating hours, service area described in text, embedded Google Maps showing Barwani. No contact form needed.
+
+6. Technical Specifications
+
+6.1 Performance
+	•	Lighthouse performance score target: 90+ on mobile
+	•	Images: WebP format, lazy-loaded, max 200KB per image
+	•	Fonts: system stack preferred; web fonts max 2 families, preloaded
+	•	No heavy JS frameworks required — vanilla JS or lightweight library preferred for V1
+
+6.2 Mobile-first requirements
+	•	Breakpoints: 375px (small phone), 430px (large phone), 768px (tablet), 1280px (desktop)
+	•	All tap targets minimum 48×48px
+	•	Phone number links must use tel: protocol
+	•	WhatsApp links must use wa.me/91XXXXXXXXXX format
+	•	No hover-only interactions on mobile
+
+6.3 Accessibility
+	•	All images must have descriptive alt text in English
+	•	Contrast ratio minimum 4.5:1 for body text
+	•	Veg/non-veg dot indicators must also use text labels (not color alone)
+	•	Form fields must have visible labels (not placeholder-only)
+
+6.4 Hosting & domain
+To be confirmed by client. Suggested stack: static site (Next.js or plain HTML/CSS/JS) hosted on Vercel or Netlify. Suggest-a-dish voting backend: Airtable API or Google Sheets via Apps Script for V1.
+
+7. Copy & Tone Guidelines
+The website copy should feel warm, proud, and confident — the voice of someone who genuinely believes their food is the best in Barwani (because it is). Not corporate. Not generic delivery app language.
+
+Do
+Don’t
+Use “asli”, “shahi”, “desi zaika”
+Say “delicious food” or “tasty dishes”
+Reference Nimadi / Nimar roots specifically
+Use generic “Indian cuisine”
+Write prices as ₹399/- (with dash)
+Write “Rs. 399” or “INR 399”
+Bilingual EN + HI on dish descriptions
+Translate entire UI into Hindi
+Mention slow-cooking, hand-ground masala
+Use vague “fresh ingredients”
+Keep CTAs direct: “Call to Order”
+Use “Order Now” (no online ordering exists)
+
+8. Deliverables & Timeline
+
+Deliverable
+Notes
+Wireframes (mobile + desktop)
+Homepage all 6 sections + 4 secondary pages
+Visual design mockups
+Homepage hero + combo section + suggest-a-dish section minimum
+Design system / component library
+Colors, type scale, card variants, button states
+Developed website
+Responsive, deployed, tested on Android Chrome
+Suggest-a-dish backend
+V1 Airtable or Sheets integration
+Handoff
+Figma file + developer notes + image assets
+
+[  ] Timeline to be agreed with client. Recommend: wireframes in week 1, design review week 2, development weeks 3–5, QA + launch week 6.
+
+9. Assets to be provided by client
+	•	High-resolution dish photography for all menu items (minimum 8 images)
+	•	Logo files in SVG and PNG (white + color versions)
+	•	Approved color palette hex codes from Anti Gravity brand file
+	•	WhatsApp channel link / phone number confirmation
+	•	Instagram / Facebook handles (if active)
+	•	Google Maps location pin for Barwani outlet
+
+[  ] If dish photography is not available: Anti Gravity may source stock food photography as placeholders for design review, to be replaced by client photography before launch.
+
+
+End of Design Brief
+Legpiece on Call  ·  +91 82360 95399  ·  Barwani, Madhya Pradesh

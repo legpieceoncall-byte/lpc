@@ -30,6 +30,7 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
+    /* cursor: url('Dishes%20Images/fav.png') 16 16, pointer; */
 }
 
 h1,

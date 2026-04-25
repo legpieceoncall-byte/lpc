@@ -46,10 +46,36 @@ document.addEventListener('DOMContentLoaded', () => {
     // Suggest Form Logic
     const form = document.getElementById('suggest-form');
     if (form) {
-        form.addEventListener('submit', (e) => {
+        form.addEventListener('submit', async (e) => {
             e.preventDefault();
-            alert('Idea submitted! We will announce the winner on Sunday via WhatsApp.');
-            form.reset();
+
+            const formData = {
+                dishName: document.getElementById('dishName').value,
+                dishDesc: document.getElementById('dishDesc').value,
+                phoneNum: document.getElementById('phoneNum').value
+            };
+
+            try {
+                // Google Apps Script deployment URL
+                const scriptUrl = 'https://script.google.com/macros/s/AKfycbyhDrDcfh--_kOttbGVeTdXMcS5mY7Uz-ha6kXSRmJIERq8g5ETXPlxodp-YscFwGr7/exec';
+
+                const response = await fetch(scriptUrl, {
+                    method: 'POST',
+                    body: JSON.stringify(formData)
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    alert('Idea submitted! We will announce the winner on Sunday via WhatsApp.');
+                    form.reset();
+                } else {
+                    alert('Error submitting idea. Please try again.');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error submitting idea. Please try again.');
+            }
         });
     }
 

@@ -165,6 +165,7 @@ nav {
     border-radius: 40px;
     overflow: hidden;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    isolation: isolate; /* Important for blend modes */
 }
 
 .hero-image-wrapper img,
@@ -173,6 +174,7 @@ nav {
     height: 100%;
     object-fit: cover;
     mix-blend-mode: screen;
+    filter: contrast(1.1) brightness(1.1); /* Helps push dark areas to pure black */
 }
 
 .hero-tagline {

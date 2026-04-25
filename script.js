@@ -79,15 +79,62 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Voting Buttons
+    // Voting Buttons with localStorage persistence
     const voteBtns = document.querySelectorAll('.vote-btn');
+    const userVotedDishes = new Set(JSON.parse(localStorage.getItem('votedDishes') || '[]'));
+
+    // Initialize vote counts from localStorage on page load
+    voteBtns.forEach(btn => {
+        const dishName = btn.getAttribute('data-dish');
+        const voteCard = btn.closest('.vote-card');
+        const voteCountEl = voteCard.querySelector('.vote-count');
+
+        // Load stored vote count
+        const storedVotes = localStorage.getItem(`votes_${dishName}`);
+        if (storedVotes) {
+            voteCountEl.textContent = storedVotes + ' votes';
+        }
+
+        // Check if user has already voted for this dish
+        if (userVotedDishes.has(dishName)) {
+            btn.classList.add('voted');
+            btn.classList.remove('btn-outline');
+            btn.classList.add('btn-primary');
+            btn.innerHTML = '<i class="fas fa-check"></i> Voted';
+            btn.disabled = true;
+        }
+    });
+
+    // Add click handlers
     voteBtns.forEach(btn => {
         btn.addEventListener('click', function() {
-            if (!this.classList.contains('voted')) {
+            const dishName = this.getAttribute('data-dish');
+
+            if (!userVotedDishes.has(dishName)) {
+                userVotedDishes.add(dishName);
+                localStorage.setItem('votedDishes', JSON.stringify(Array.from(userVotedDishes)));
+
+                // Increment vote count
+                const voteCard = this.closest('.vote-card');
+                const voteCountEl = voteCard.querySelector('.vote-count');
+
+                // Extract number from text like "100 votes"
+                const voteText = voteCountEl.textContent.trim();
+                const currentVotes = parseInt(voteText.split(' ')[0]) || 0;
+                const newVotes = currentVotes + 1;
+
+                // Update the vote count text
+                voteCountEl.textContent = newVotes + ' votes';
+
+                // Store the new vote count
+                localStorage.setItem(`votes_${dishName}`, newVotes);
+
+                // Update button appearance
                 this.classList.add('voted');
-                this.innerHTML = '<i class="fas fa-check"></i> Voted';
                 this.classList.remove('btn-outline');
                 this.classList.add('btn-primary');
+                this.innerHTML = '<i class="fas fa-check"></i> Voted';
+                this.disabled = true;
             }
         });
     });
